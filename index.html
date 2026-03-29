@@ -27,14 +27,15 @@
       display: none;
     }
 
-    .beer {
-      font-size: 80px;
-      animation: dance 0.5s infinite alternate;
+    .tiger {
+  font-size: 80px;
+  animation: tigerDance 0.4s infinite alternate;
     }
 
-    @keyframes dance {
-      from { transform: translateX(-20px) rotate(-10deg); }
-      to { transform: translateX(20px) rotate(10deg); }
+@keyframes tigerDance {
+  0%   { transform: translateX(-20px) rotate(-10deg) scale(1); }
+  50%  { transform: translateY(-20px) rotate(10deg) scale(1.1); }
+  100% { transform: translateX(20px) rotate(-10deg) scale(1); }
     }
   </style>
 </head>
@@ -48,7 +49,7 @@
 
   <div id="result">
     <h2 id="message"></h2>
-    <div class="beer">🍺</div>
+    <div class="tiger">🐯</div>
   </div>
 
   <script>
@@ -62,7 +63,7 @@
       }
 
       document.getElementById("message").innerText = 
-        "Hey " + name + "! Here's your dancing beer 🍺";
+        "Hey " + name + "! Here's your dancing tiger 🐯";
 
       document.getElementById("result").style.display = "block";
     }
