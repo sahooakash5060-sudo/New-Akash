@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dancing Beer App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #f4f4f4;
+    }
+
+    input {
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+    }
+
+    button {
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    #result {
+      margin-top: 30px;
+      display: none;
+    }
+
+    .beer {
+      font-size: 80px;
+      animation: dance 0.5s infinite alternate;
+    }
+
+    @keyframes dance {
+      from { transform: translateX(-20px) rotate(-10deg); }
+      to { transform: translateX(20px) rotate(10deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🍺 Dancing Beer App</h1>
+
+  <input type="text" id="name" placeholder="Enter your name"><br>
+  <input type="date" id="dob"><br>
+  <button onclick="showBeer()">Submit</button>
+
+  <div id="result">
+    <h2 id="message"></h2>
+    <div class="beer">🍺</div>
+  </div>
+
+  <script>
+    function showBeer() {
+      const name = document.getElementById("name").value;
+      const dob = document.getElementById("dob").value;
+
+      if (!name || !dob) {
+        alert("Please enter both Name and DOB");
+        return;
+      }
+
+      document.getElementById("message").innerText = 
+        "Hey " + name + "! Here's your dancing beer 🍺";
+
+      document.getElementById("result").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
