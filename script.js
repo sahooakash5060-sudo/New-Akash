@@ -1,7 +1,7 @@
 let lastFriend = "";
 
 function findFriend() {
-    const friends = ["Rahul", "Priya", "Amit", "Sneha", "Arjun", "Neha", "Kiran"];
+    const friends = ["Sudhir", "Akash", "Swapnil", "Sneha", "Arjun", "Neha", "Kiran"];
     const messages = [
         "Looks like destiny chose this friend!",
         "You guys are a perfect match 😄",
