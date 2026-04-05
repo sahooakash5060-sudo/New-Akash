@@ -1,2 +1,0 @@
-# New-Akash
-Checking Git
