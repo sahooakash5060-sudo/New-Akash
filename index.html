@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Best Friend Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Friend Finder</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -10,10 +12,9 @@
 <div class="container">
     <h1>🤝 Best Friend Generator</h1>
 
-    <input type="text" id="username" placeholder="Enter your name" onkeypress="handleKey(event)">
-    <br><br>
+    <input type="text" id="username" placeholder="Enter your name">
 
-    <button onclick="findFriend()">Find Best Friend</button>
+    <button id="findBtn">Find Best Friend</button>
 
     <p id="message"></p>
     <h2 id="result"></h2>

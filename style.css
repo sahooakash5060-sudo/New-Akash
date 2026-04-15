@@ -1,12 +1,21 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background: linear-gradient(to right, #6c948d, #6d83e4);
     text-align: center;
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
-    margin-top: 120px;
+    width: 100%;
+    padding: 20px;
 }
 
 input {
@@ -14,6 +23,7 @@ input {
     width: 240px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    margin-bottom: 16px;
 }
 
 button {
@@ -27,6 +37,11 @@ button {
 
 button:hover {
     background-color: #ff4d4d;
+}
+
+button:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
 }
 
 h2 {
